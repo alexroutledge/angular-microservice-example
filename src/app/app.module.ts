@@ -7,24 +7,19 @@ import { RouterModule } from '@angular/router';
 
 import { MaterialModule } from './common/material.module';
 import { AppComponent } from './app.component';
-import { LikeButtonComponent } from './like-button/like-button.component';
-import { Page1Component } from './page1/page1.component';
-import { Page2Component } from './page2/page2.component';
-import { routes } from 'app/routes';
-import { ModuleShellComponent } from './module-shell/module-shell.component';
+import { routes } from './routes';
+import { MicroservicesButtonComponent } from './microservices-button/microservices-button.component';
 
 export const webComponents = [
-  ModuleShellComponent,
-  Page1Component,
-  Page2Component,
-  LikeButtonComponent,
-  AppComponent,
+  MicroservicesButtonComponent,
+  AppComponent
 ];
 
 
 @NgModule({
   declarations: [
     ...webComponents,
+    MicroservicesButtonComponent,
   ],
   entryComponents: [
     ...webComponents
